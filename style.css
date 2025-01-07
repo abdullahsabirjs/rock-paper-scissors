@@ -1,0 +1,113 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    font-family: 'Press Start 2P', cursive; /* Gaming font */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .game-container {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  /* Title */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f39c12;
+    text-shadow: 2px 2px 5px #000;
+  }
+  
+  /* Choices Buttons */
+  .choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .choices button {
+    background: linear-gradient(135deg, #f39c12, #d35400);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  .choices button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #d35400, #f39c12);
+  }
+  
+  /* Results Section */
+  .results {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .result-text {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #27ae60;
+  }
+  
+  .results p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  /* Reset Button */
+  #reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  #reset-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #c0392b, #e74c3c);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .choices button {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    .results p {
+      font-size: 0.9rem;
+    }
+  
+    #reset-btn {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }
+  
